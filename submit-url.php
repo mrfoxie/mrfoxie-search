@@ -74,7 +74,6 @@
             background-size: 200% auto;
             color: #000;
             background-clip: text;
-            text-fill-color: transparent;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             animation: shine 1.6s linear infinite;
