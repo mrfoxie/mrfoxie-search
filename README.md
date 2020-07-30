@@ -1,4 +1,4 @@
-# Clone-Google-Search-Engine
+# Search
 Clone Google Search Engine using PHP PDO + OOP<br>
 backend: PHP<br>
 front-end: css + jquery + masonry + fancybox<br><br>
@@ -20,8 +20,3 @@ There are many functions I will continue to develop if it is good to have a rati
 ![Image 5](https://imgur.com/h6dhcVi.png)
 
 ![Image 6](https://imgur.com/tkYqbUm.png)
-
-
-
-
-"# search" 
