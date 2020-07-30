@@ -23,13 +23,19 @@ include("classes/ImageResultsProvider.php");
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <style>
+          body {
+            background-color: #0c0c0c;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        }
+        </style>
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #f42b03;">
+        <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #f42b0300;">
             <img class="navbar-brand" src="assets/images/mrfoxie.png" width="30" alt="">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
+            <a class="navbar-brand" href="#">Mr. Foxie</a>
+            <button style="color:#ffffff; border:1px solid #ffffff; box-shadow: inset 0px 0px 10px #f42b03, 0px 0px 10px #f42b03;" class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="true" aria-label="Toggle navigation">@</button>
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
