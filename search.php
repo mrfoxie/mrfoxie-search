@@ -172,8 +172,8 @@ include("classes/ImageResultsProvider.php");
                         <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Others</a>
                         <div class="dropdown-menu" aria-labelledby="dropdownId">
                             <a class="dropdown-item" href="submit-url.php" target="_blank">Submit Url</a>
-                            <a class="dropdown-item" href="https://instagram.com/mistrysiddh">Instagram</a>
-                            <a class="dropdown-item" href="https://github.com/mrfoxie/search">GitHub</a>
+                            <a class="dropdown-item" href="https://instagram.com/mistrysiddh" target="_blank">Instagram</a>
+                            <a class="dropdown-item" href="https://github.com/mrfoxie/search" target="_blank">GitHub</a>
                         </div>
                     </li>
                 </ul>
