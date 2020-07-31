@@ -12,7 +12,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <style>
         body {
-            background-color: #0c0c0c;
+            background-color: #f5f5f5;
+            background-image: url('assets/images/bg-chat-tile-light_9e8a2898faedb7db9bf5638405cf81ae.png');
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
         }
         
@@ -27,7 +28,6 @@
             height: 490px;
             border: 1px solid #ffffff;
             box-shadow: inset 0px 0px 10px #f42b03, 0px 0px 10px #f42b03;
-            background-color: transparent;
         }
         
         .input-group-text {
@@ -48,7 +48,7 @@
         input[type="url"]:focus {
             background-color: transparent;
             border-color: #ffffff;
-            color: #ffffff;
+            color: #f42b03;
             box-shadow: inset 0px 0px 10px #f42b03, 0px 0px 10px #f42b03;
         }
         
@@ -57,7 +57,7 @@
         }
         
         .btn {
-            color: #ffffff;
+            color: #f42b03;
             border: 1px solid #ffffff;
             box-shadow: inset 0px 0px 10px #f42b03, 0px 0px 10px #f42b03;
         }

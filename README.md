@@ -9,14 +9,11 @@ There are many functions I will continue to develop if it is good to have a rati
 3: acess http://localhost/clone_google/submit-url.php to submit url add database search (This tool is similar to google's webmastertool
 )<br> <br>
 
-![Image 1](https://imgur.com/WpU6CTW.png)
+![Image 1](https://i.imgur.com/A4squ5v.png)
 
-![Image 2](https://imgur.com/9jmbjLX.png)
+![Image 2](https://i.imgur.com/T01588E.png)
 
-![Image 3](https://imgur.com/4bmQk2V.png)
+![Image 3](https://i.imgur.com/u4fxRN3.png)
 
-![Image 4](https://imgur.com/J99ys4C.png)
-
-![Image 5](https://imgur.com/h6dhcVi.png)
-
-![Image 6](https://imgur.com/tkYqbUm.png)
+![Image 4](https://i.imgur.com/04gYuJo.png)
+# Thank You
