@@ -75,7 +75,7 @@
         <div class="row d-flex justify-content-center">
             <div class="col-md-4">
                 <div class="card text-light">
-                    <img class="card-img-top" src="assets/images/mrfoxie.png" alt="" />
+                    <a href="#"><img class="card-img-top" src="assets/images/mrfoxie.png" alt="logo" /></a>
                     <form action="search.php" method="get">
                         <div class="card-body">
                             <div class="input-group mb-3">
