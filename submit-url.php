@@ -127,7 +127,7 @@
                     data: $('form').serialize(),
                     success: function() {
                         $("#buttonSubmit").text('disabled', false);
-                        $(".textGradient").html("The system has received the url");
+                        $(".textGradient").html("The system has received the url. Please refresh this page to submit more URL.");
                     }
                 });
             })
