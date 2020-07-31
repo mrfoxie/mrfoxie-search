@@ -82,9 +82,7 @@
                                 <div class="input-group-prepend"><span class="input-group-text" id="basic-addon1" style="color: #f42b03;">@</span></div>
                                 <input type="text" class="form-control" placeholder="Type here to search." aria-label="Search" aria-describedby="basic-addon1" name="term" required />
                             </div>
-                            <div class="alert alert-info" role="alert">
-                                <strong>Press Enter</strong> to search
-                            </div>
+                            <a href="submit-url.php"><input style="width: 100%;" class="btn btn-lg" type="submit" value="Submit URL" /></a>
                             <!-- <input style="width: 100%;" class="btn btn-lg" type="submit" value="Submit" /> -->
                         </div>
                     </form>
