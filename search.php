@@ -25,15 +25,12 @@ include("classes/ImageResultsProvider.php");
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <style>
             body {
-                background-color: #0c0c0c;
+                background-color: #f5f5f5;
                 font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
                 margin-bottom: 10%;
                 word-wrap: break-word;
                 text-align: justify;
-            }
-            
-            input {
-                color: #ffffff;
+                background-image: url('assets/images/bg-chat-tile-light_9e8a2898faedb7db9bf5638405cf81ae.png');
             }
             
             input.form-control {
@@ -54,7 +51,7 @@ include("classes/ImageResultsProvider.php");
             }
             
             .btn {
-                color: #ffffff;
+                color: #0c0c0c;
                 background-color: #f42b03;
                 border: 1px solid #ffffff;
             }
@@ -66,6 +63,13 @@ include("classes/ImageResultsProvider.php");
             }
             
             .navbar {
+                position: sticky;
+                top: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                z-index: 99;
+                background-color: #f5f5f5;
                 border-color: #f42b03;
                 border-bottom: 1px solid #f42b03;
                 box-shadow: 0px 05px 10px #f42b03;
@@ -76,6 +80,15 @@ include("classes/ImageResultsProvider.php");
                 right: 0;
                 margin: auto;
                 padding: 20px;
+                background-color: #f5f5f5;
+            }
+            
+            a {
+                color: #f42b03;
+            }
+            
+            a:hover {
+                color: #0c0c0c;
             }
             
             a.result {
@@ -84,12 +97,12 @@ include("classes/ImageResultsProvider.php");
             
             a.result:hover {
                 transition: 0.3s;
-                color: #ffffff;
+                color: #0c0c0c;
                 text-shadow: 0px 0px 10px #f42b03;
             }
             
             .resultsCount {
-                color: #ffffff;
+                color: #0c0c0c;
             }
             
             .url,
@@ -99,36 +112,37 @@ include("classes/ImageResultsProvider.php");
             
             .details:hover {
                 transition: 0.3s;
-                color: #ffffff;
+                color: #0c0c0c;
                 text-shadow: 0px 0px 10px #f42b03;
             }
             
             .description {
-                color: #ffffff;
+                color: #0c0c0c;
             }
             
             .resultsCount {
                 font-size: 10px;
             }
-            /* .pagination {
-                border-radius: 0rem;
-            } */
+            
+            .page-item {
+                background-color: #f42b03;
+            }
             
             .page-link {
                 border: none;
-                color: #ffffff;
-                background-color: transparent;
+                color: #0c0c0c;
+                background-color: #f42b03;
             }
             
             .page-item.active .page-link {
                 border: 1px solid #f42b03;
-                background-color: transparent;
+                background-color: #f42b03;
                 border-radius: 0rem;
             }
             
             li.page-item:hover a.page-link {
                 transition: 0.3s;
-                color: #ffffff;
+                color: #0c0c0c;
                 border: 1px solid #f42b03;
                 background-color: transparent;
                 box-shadow: inset 0px 0px 10px #f42b03, 0px 0px 10px #f42b03;
@@ -155,7 +169,7 @@ include("classes/ImageResultsProvider.php");
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #f42b0300;">
+        <nav class="navbar navbar-expand-md navbar-ligh text-dark">
             <img class="navbar-brand" src="assets/images/mrfoxie.png" width="30" alt="">
             <a class="navbar-brand" href="/">Mr. Foxie</a>
             <button style="color:#ffffff; border:1px solid #ffffff; box-shadow: inset 0px 0px 10px #f42b03, 0px 0px 10px #f42b03;" class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
@@ -177,7 +191,7 @@ include("classes/ImageResultsProvider.php");
                         </div>
                     </li>
                 </ul>
-                <p class="my-2 my-lg-2 text-light">
+                <p class="my-2 my-lg-2 text-dark">
                     <?php echo $type; ?>:
                     <?php echo $term; ?>
             </div>
@@ -201,6 +215,7 @@ include("classes/ImageResultsProvider.php");
                 ?>
                 </div>
                 <div class="col-xl-12">
+                    <br>
                     <nav aria-label="Page navigation">
                         <ul class="pagination pagination-md justify-content-center">
                             <?php

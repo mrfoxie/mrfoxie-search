@@ -12,7 +12,7 @@
     <link rel="shortcut icon" href="assets/images/mrfoxie.png" type="image/x-icon">
     <style>
         body {
-            background-color: #0c0c0c;
+            background-color: #f5f5f5;
             background-image: url('assets/images/bg-chat-tile-light_9e8a2898faedb7db9bf5638405cf81ae.png');
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
         }
@@ -28,7 +28,6 @@
             height: 490px;
             border: 1px solid #ffffff;
             box-shadow: inset 0px 0px 10px #f42b03, 0px 0px 10px #f42b03;
-            background-color: transparent;
         }
         
         .input-group-text {
@@ -49,7 +48,7 @@
         input[type="text"]:focus {
             background-color: transparent;
             border-color: #ffffff;
-            color: #ffffff;
+            color: #F42B03;
             box-shadow: inset 0px 0px 10px #f42b03, 0px 0px 10px #f42b03;
         }
         
@@ -58,7 +57,7 @@
         }
         
         .alert {
-            color: #ffffff;
+            color: #f42b03;
             text-shadow: 0px 0px 10px #F42B03;
             border: none;
             background-color: transparent;
