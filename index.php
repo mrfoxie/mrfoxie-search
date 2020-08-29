@@ -6,14 +6,19 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1,
-            shrink-to-fit=no" />
+ shrink-to-fit=no" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <link rel="shortcut icon" href="assets/images/mrfoxie.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body {
-            background-color: #f5f5f5;
-            background-image: url('assets/images/bg-chat-tile-light_9e8a2898faedb7db9bf5638405cf81ae.png');
+            background-color: #ffffff;
+            background-image: url('assets/images/hacked.jpg');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
         }
         
@@ -26,8 +31,9 @@
             margin: auto;
             width: 350px;
             height: 490px;
-            border: 1px solid #ffffff;
-            box-shadow: inset 0px 0px 10px #f42b03, 0px 0px 10px #f42b03;
+            background-color: #ffffff;
+            border: none;
+            box-shadow: 2px 2px 10px #333333;
         }
         
         .input-group-text {
@@ -47,9 +53,9 @@
         
         input[type="text"]:focus {
             background-color: transparent;
-            border-color: #ffffff;
+            border-color: #f42b03;
             color: #F42B03;
-            box-shadow: inset 0px 0px 10px #f42b03, 0px 0px 10px #f42b03;
+            box-shadow: 0px 0px 10px #f42b03;
         }
         
         input[type="text"]::placeholder {
@@ -61,6 +67,11 @@
             text-shadow: 0px 0px 10px #F42B03;
             border: none;
             background-color: transparent;
+        }
+        
+        i {
+            color: #F42B03;
+            margin: 3px;
         }
         
          ::selection {
@@ -75,15 +86,18 @@
         <div class="row d-flex justify-content-center">
             <div class="col-md-4">
                 <div class="card text-light">
-                    <a href="#"><img class="card-img-top" src="assets/images/mrfoxie.png" alt="logo" /></a>
+                    <a href="mrfoxie.ml"><img class="card-img-top" src="assets/images/mrfoxie.png" alt="logo" /></a>
                     <form action="search.php" method="get">
                         <div class="card-body">
                             <div class="input-group mb-3">
-                                <div class="input-group-prepend"><span class="input-group-text" id="basic-addon1" style="color: #f42b03;">@</span></div>
-                                <input type="text" class="form-control" placeholder="Type here to search." aria-label="Search" aria-describedby="basic-addon1" name="term" required />
-                            </div>
-                            <div class="alert alert-info" role="alert">
-                                <strong>Press Enter</strong> to search
+                                <div class="input-group-prepend"><span class="input-group-text" id="basic-addon1" style="color: #f42b03;">@</span></div><input type="text" class="form-control" placeholder="Type here to search." aria-label="Search" aria-describedby="basic-addon1" name="term"
+                                    required /></div>
+                            <div class="col-sm-12 text-center">
+                                <a href="http://mrfoxie.ml" target="_blank" rel="noopener noreferrer"><i class="fa fa-sitemap fa-lg" aria-hidden="true"></i></a>
+                                <a href="http://t.me/MrFoxie" target="_blank" rel="noopener noreferrer"><i class="fa fa-telegram fa-lg" aria-hidden="true"></i></a>
+                                <a href="https://github.com/mrfoxie/mrfoxie-search" target="_blank" rel="noopener noreferrer"><i class="fa fa-github-alt fa-lg" aria-hidden="true"></i></a>
+                                <a href="mailto:hackingtiger942@gmail.com"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a>
+                                <a href="submit-url.php" target="_blank" rel="noopener noreferrer"><i class="fa fa-upload fa-lg" aria-hidden="true"></i></a>
                             </div>
                         </div>
                     </form>

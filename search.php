@@ -23,14 +23,23 @@ include("classes/ImageResultsProvider.php");
         <link rel="shortcut icon" href="assets/images/mrfoxie.png" type="image/x-icon">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
             body {
-                background-color: #f5f5f5;
+                background-color: #ffffff;
+                background-image: url('assets/images/hacked.jpg');
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
                 font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
                 margin-bottom: 10%;
                 word-wrap: break-word;
                 text-align: justify;
-                background-image: url('assets/images/bg-chat-tile-light_9e8a2898faedb7db9bf5638405cf81ae.png');
+            }
+            
+            .row {
+                background-color: #ffffff;
             }
             
             input.form-control {
@@ -69,7 +78,7 @@ include("classes/ImageResultsProvider.php");
                 right: 0;
                 margin: auto;
                 z-index: 99;
-                background-color: #f5f5f5;
+                background-color: #ffffff;
                 border-color: #f42b03;
                 border-bottom: 1px solid #f42b03;
                 box-shadow: 0px 05px 10px #f42b03;
@@ -151,10 +160,8 @@ include("classes/ImageResultsProvider.php");
             
             div.dropdown-menu.show {
                 text-align: center;
-                color: #ffffff;
-                background-color: #0c0c0c;
-                border: 1px solid #ffffff;
-                box-shadow: inset 0px 0px 10px #f42b03, 0px 0px 10px #f42b03;
+                background-color: #ffffff;
+                border: none;
             }
             
             a.dropdown-item {
@@ -162,8 +169,14 @@ include("classes/ImageResultsProvider.php");
             }
             
             a.dropdown-item:hover {
+                transition: 0.6s;
                 color: #ffffff;
-                background-color: #f42b03;
+                background-color: #0c0c0c;
+            }
+            
+            i,
+            strong {
+                color: #f42b03;
             }
         </style>
     </head>
@@ -179,15 +192,12 @@ include("classes/ImageResultsProvider.php");
                     <li class="<?php echo $type == 'sites' ? 'active' : '' ?>">
                         <a class="nav-link" href="<?php echo " search.php?term=$term&type=sites "; ?>">All links <span class="sr-only">(current)</span></a>
                     </li>
-                    <!-- <li class="<?php echo $type == 'images' ? 'active' : '' ?>">
-                        <a class="nav-link" href="<?php echo " search.php?term=$term&type=images "; ?>">Images</a>
-                    </li> -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Others</a>
                         <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="submit-url.php" target="_blank">Submit Url</a>
-                            <a class="dropdown-item" href="https://instagram.com/mistrysiddh" target="_blank">Instagram</a>
-                            <a class="dropdown-item" href="https://github.com/mrfoxie/search" target="_blank">GitHub</a>
+                            <a class="dropdown-item" href="submit-url.php" target="_blank"><i class="fa fa-upload fa-lg" aria-hidden="true"></i></a>
+                            <a class="dropdown-item" href="https://t.me/MrFoxie" target="_blank"><i class="fa fa-telegram fa-lg" aria-hidden="true"></i></a>
+                            <a class="dropdown-item" href="https://github.com/mrfoxie/search" target="_blank"><i class="fa fa-github-alt fa-lg" aria-hidden="true"></i></a>
                         </div>
                     </li>
                 </ul>
@@ -197,8 +207,31 @@ include("classes/ImageResultsProvider.php");
             </div>
         </nav>
         <br>
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
+                <div class="col-md-4">
+                    <div class="card" style="background-color:transparent; border:none;">
+                        <img class="card-img-top" src="assets/images/mrfoxie.png" alt="logo">
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                Search Word:
+                                <?php echo $term; ?>
+                            </h4>
+                            <p class="card-text"><strong>Welcome Foxie!!!</strong> to Mr. Foxie. If you like it then you can donate me on <a href="https://paypal.me/mistrysiddh" target="_blank" rel="noopener noreferrer"><i class="fa fa-paypal fa-lg" aria-hidden="true"></i></a>.</p>
+                            <div class="card">
+                                <div class="card-header">
+                                    Quote
+                                </div>
+                                <div class="card-body">
+                                    <blockquote class="blockquote mb-0">
+                                        <p>If you win, you live.<br>If you lose, you die.<br>If you don’t fight,<br>you can’t win.</p>
+                                        <footer class="blockquote-footer"><cite title="Mechatronics Forum">Mr. Foxie</cite></footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-lg-8">
                     <?php
                     if($type == "sites"){

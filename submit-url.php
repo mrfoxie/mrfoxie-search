@@ -12,8 +12,12 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <style>
         body {
-            background-color: #f5f5f5;
-            background-image: url('assets/images/bg-chat-tile-light_9e8a2898faedb7db9bf5638405cf81ae.png');
+            background-color: #ffffff;
+            background-image: url('assets/images/hacked.jpg');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
         }
         
@@ -26,8 +30,9 @@
             margin: auto;
             width: 350px;
             height: 490px;
-            border: 1px solid #ffffff;
-            box-shadow: inset 0px 0px 10px #f42b03, 0px 0px 10px #f42b03;
+            background-color: #ffffff;
+            border: none;
+            box-shadow: 2px 2px 10px #333333;
         }
         
         .input-group-text {
@@ -47,9 +52,9 @@
         
         input[type="url"]:focus {
             background-color: transparent;
-            border-color: #ffffff;
-            color: #f42b03;
-            box-shadow: inset 0px 0px 10px #f42b03, 0px 0px 10px #f42b03;
+            border-color: #f42b03;
+            color: #F42B03;
+            box-shadow: 0px 0px 10px #f42b03;
         }
         
         input[type="url"]::placeholder {
@@ -57,14 +62,16 @@
         }
         
         .btn {
-            color: #f42b03;
-            border: 1px solid #ffffff;
-            box-shadow: inset 0px 0px 10px #f42b03, 0px 0px 10px #f42b03;
+            color: #ffffff;
+            background-color: #f42b03;
+            border: none;
+            box-shadow: 2px 2px 10px #f42b03;
         }
         
         .btn:hover {
             transition: 0.5s;
-            color: #f42b03;
+            color: #ffffff;
+            text-shadow: 1px 1px 2px #ffffff;
         }
         
         .alert {
@@ -101,7 +108,7 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="card text-light">
-                    <a href="/"><img class="card-img-top" src="assets/images/mrfoxie.png" alt="logo" /></a>
+                    <a href="#"><img class="card-img-top" src="assets/images/mrfoxie.png" alt="logo" /></a>
                     <form method="post" id="formSubmitUrl">
                         <div class="card-body">
                             <div class="input-group mb-3">
